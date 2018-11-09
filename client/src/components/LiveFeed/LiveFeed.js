@@ -82,10 +82,4 @@ function BottomAppBar(props) {
   );
 }
 
-// BottomAppBar.propTypes = {
-//   classes: PropTypes.object.isRequired,
-// };
-
-// export default withStyles(styles)(BottomAppBar);
-
 export default BottomAppBar

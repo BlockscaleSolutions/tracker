@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 
 import 'font-awesome/css/font-awesome.css'
@@ -14,13 +14,13 @@ const Footer = props =>
         </Typography>
 
 
-        <a href="https://www.linkedin.com/company/blockscale-solutions-inc/" target="_blank">
+        <a href="https://www.linkedin.com/company/blockscale-solutions-inc/" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-linkedin Footer-Social-Icon"></i>
         </a>
-        <a href="https://github.com/BlockscaleSolutions" target="_blank">
+        <a href="https://github.com/BlockscaleSolutions" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-github Footer-Social-Icon"></i>
         </a>
-        <a href="https://twitter.com/BlockscaleSolns" target="_blank">
+        <a href="https://twitter.com/BlockscaleSolns" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-twitter Footer-Social-Icon"></i>
         </a>
 
