@@ -1,0 +1,32 @@
+.text {
+    padding: 20;  
+}
+
+.Paper-Live-Feed {
+    margin: 30px;
+    text-align: left;
+    padding: 20px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.list {}
+
+.appBar {
+    top: 'auto';
+    bottom: 0;
+  }
+
+.toolbar {
+    alignItems: 'center';
+    justifyContent: 'space-between';
+}
+
+.fabButton {
+  position: 'absolute';
+  zIndex: 1;
+  top: -30;
+  left: 0;
+  right: 0;
+  margin: '0 auto';
+}

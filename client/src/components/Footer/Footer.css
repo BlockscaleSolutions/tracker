@@ -1,0 +1,20 @@
+.Footer {
+    padding: 5px ;
+    background-color: #f0f0f0;
+}
+
+.Footer-Contact {
+    color: #fff;
+}
+
+.Footer-logo {
+    padding: 5px;
+    animation: App-logo-spin infinite 10s linear;
+    height: 7vmin;
+}
+
+.Footer-Social-Icon {
+    padding: 5px;
+    font-size: 25px;
+    color: #000;
+}
