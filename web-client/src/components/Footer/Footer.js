@@ -22,8 +22,7 @@ const Footer = props =>
         <a href="https://twitter.com/BlockscaleSolns" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-twitter Footer-Social-Icon"></i>
         </a>
-
-      </footer>
+    </footer>
 
 export default Footer
 
