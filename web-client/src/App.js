@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom'
 
 // Views
-import Dashboard from './views/Dashboard';
-import Register from './views/Register';
+import Dashboard from './views/Dashboard/Dashboard';
+import DeviceManagement from './views/DeviceManagement/DeviceManagement';
 
 import './App.css';
 
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Route exact={true} path="/" render={() => <Dashboard/>} />
-        <Route exact={true} path="/register" render={() => <Register/>} />
+        <Route exact={true} path="/devices" render={() => <DeviceManagement/>} />
       </div>
     );
   }

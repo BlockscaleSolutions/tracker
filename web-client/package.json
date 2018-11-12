@@ -6,6 +6,8 @@
     "@material-ui/core": "^3.4.0",
     "@material-ui/icons": "^3.0.1",
     "bip39": "^2.5.0",
+    "ethereumjs-abi": "^0.6.5",
+    "ethereumjs-util": "^6.0.0",
     "ethereumjs-wallet": "^0.6.2",
     "font-awesome": "^4.7.0",
     "react": "^16.6.1",

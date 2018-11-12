@@ -1,20 +1,24 @@
 .Footer {
-    padding: 5px ;
+    padding: 3px ;
     background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
 }
 
 .Footer-Contact {
-    color: #fff;
+    color: #000;
 }
 
 .Footer-logo {
-    padding: 5px;
+    padding: 3px;
     animation: App-logo-spin infinite 10s linear;
-    height: 7vmin;
+    height: 5vmin;
 }
 
 .Footer-Social-Icon {
     padding: 5px;
-    font-size: 25px;
+    font-size: 15px;
     color: #000;
 }

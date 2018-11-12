@@ -9,7 +9,7 @@ import logo from '../../blockscale.png';
 const Footer = props =>
     <footer className="Footer">
         <img src={logo} className="Footer-logo" alt="logo" />
-        <Typography variant="h6" align="center" className="Footer-Contact">
+        <Typography align="center" className="Footer-Contact">
           &copy; Blockscale Solutions Inc.
         </Typography>
 

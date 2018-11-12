@@ -1,0 +1,12 @@
+.Register-Header {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.Register-TextField {
+    width: auto;
+}
+
+.Register-Button {
+    padding: 5px;
+}
