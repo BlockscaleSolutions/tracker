@@ -317,6 +317,24 @@
                         "declaration": 5,
                         "isOffset": false,
                         "isSlot": false,
+                        "src": "1104:9:0",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "r": {
+                        "declaration": 11,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1089:1:0",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "signature": {
+                        "declaration": 5,
+                        "isOffset": false,
+                        "isSlot": false,
                         "src": "1190:9:0",
                         "valueSize": 1
                       }
@@ -331,15 +349,6 @@
                       }
                     },
                     {
-                      "s": {
-                        "declaration": 14,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "1128:1:0",
-                        "valueSize": 1
-                      }
-                    },
-                    {
                       "signature": {
                         "declaration": 5,
                         "isOffset": false,
@@ -349,20 +358,11 @@
                       }
                     },
                     {
-                      "signature": {
-                        "declaration": 5,
+                      "s": {
+                        "declaration": 14,
                         "isOffset": false,
                         "isSlot": false,
-                        "src": "1104:9:0",
-                        "valueSize": 1
-                      }
-                    },
-                    {
-                      "r": {
-                        "declaration": 11,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "1089:1:0",
+                        "src": "1128:1:0",
                         "valueSize": 1
                       }
                     }
@@ -727,7 +727,7 @@
                             "name": "ecrecover",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 264,
+                            "referencedDeclaration": 273,
                             "src": "1532:9:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_ecrecover_pure$_t_bytes32_$_t_uint8_$_t_bytes32_$_t_bytes32_$returns$_t_address_$",
@@ -1016,7 +1016,7 @@
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 259,
+                            "referencedDeclaration": 268,
                             "src": "1937:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
@@ -1063,7 +1063,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 266,
+                      "referencedDeclaration": 275,
                       "src": "1920:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -1489,6 +1489,24 @@
                         "declaration": 5,
                         "isOffset": false,
                         "isSlot": false,
+                        "src": "1104:9:0",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "r": {
+                        "declaration": 11,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "1089:1:0",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "signature": {
+                        "declaration": 5,
+                        "isOffset": false,
+                        "isSlot": false,
                         "src": "1190:9:0",
                         "valueSize": 1
                       }
@@ -1503,15 +1521,6 @@
                       }
                     },
                     {
-                      "s": {
-                        "declaration": 14,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "1128:1:0",
-                        "valueSize": 1
-                      }
-                    },
-                    {
                       "signature": {
                         "declaration": 5,
                         "isOffset": false,
@@ -1521,20 +1530,11 @@
                       }
                     },
                     {
-                      "signature": {
-                        "declaration": 5,
+                      "s": {
+                        "declaration": 14,
                         "isOffset": false,
                         "isSlot": false,
-                        "src": "1104:9:0",
-                        "valueSize": 1
-                      }
-                    },
-                    {
-                      "r": {
-                        "declaration": 11,
-                        "isOffset": false,
-                        "isSlot": false,
-                        "src": "1089:1:0",
+                        "src": "1128:1:0",
                         "valueSize": 1
                       }
                     }
@@ -1899,7 +1899,7 @@
                             "name": "ecrecover",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 264,
+                            "referencedDeclaration": 273,
                             "src": "1532:9:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_ecrecover_pure$_t_bytes32_$_t_uint8_$_t_bytes32_$_t_bytes32_$returns$_t_address_$",
@@ -2188,7 +2188,7 @@
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 259,
+                            "referencedDeclaration": 268,
                             "src": "1937:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
@@ -2235,7 +2235,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 266,
+                      "referencedDeclaration": 275,
                       "src": "1920:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -2357,5 +2357,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-11T21:03:02.589Z"
+  "updatedAt": "2018-11-12T17:14:28.971Z"
 }

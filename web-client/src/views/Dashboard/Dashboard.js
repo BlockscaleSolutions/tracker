@@ -29,7 +29,7 @@ class Dashboard extends Component {
                     <Paper className="Dash-Paper" elevation={10}>
                         <ProductMap
                             isMarkerShown
-                            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_KEY}`}
+                            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_MAPS_KEY}`}
                             loadingElement={<div style={{ height: `100%` }} />}
                             containerElement={<div style={{ height: `500px` }} />}
                             mapElement={<div style={{ height: `100%` }} />}

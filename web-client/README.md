@@ -1,3 +1,19 @@
+# Running the app
+
+CHOKIDAR_USEPOLLING=true REACT_APP_TX_SERVICE_URL=http://localhost:3001 REACT_INFURA_API_KEY=34adecda129b44fbb1ba930b2d9531f9 REACT_APP_MAPS_KEY=AIzaSyBRmWaxaYjgurl8LWCgy571Icas5I0xCNM yarn start
+
+
+- If not updating on file change add the polling flag
+
+CHOKIDAR_USEPOLLING=true
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

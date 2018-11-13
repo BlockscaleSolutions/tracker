@@ -10,8 +10,9 @@ import DeviceAccountForm from '../../components/DeviceForms/DeviceAccountForm';
 
 import createAccount from '../../utils/createAccount';
 import getCurrentGPSLocation from '../../utils/getCurrentGPSLocation';
-import createWeb3Connection from '../../utils/web3';
+import createWeb3Connection from '../../utils/createWeb3Connection';
 import registerDeviceOnChain from '../../utils/registerDeviceOnChain';
+import startListeningForEvents from '../../utils/startListeningForEvents';
 
 import './DeviceManagement.css';
 
@@ -21,7 +22,8 @@ class DeviceManagement extends Component {
 
         this.state = {
             address: undefined,
-            web3: undefined
+            web3: undefined,
+            listening: false, // To ensure listeners are not created multiple times
         }
     }
 
@@ -33,11 +35,19 @@ class DeviceManagement extends Component {
         }
     }
 
+    componentWillUnmount() {
+        // Clear all filters that may be bound to a node
+        const { web3 } = this.state;
+        
+        if (web3) 
+            web3.reset();
+    }
+
     /**
      * Register a new device, create associated "account" to sign transactions
      */
     register = async () => {
-        if (!await this.web3ConnectionExists()) return;
+        // if (!await this.web3ConnectionExists()) return;
         
         // Confirm persistent storage exists before generating an account
         if (navigator.storage && navigator.storage.persist) {
@@ -51,7 +61,7 @@ class DeviceManagement extends Component {
                         // localStorage.setItem('wallet', JSON.stringify(wallet))
                     }
 
-                    this.setState({ address: wallet.address })
+                    // this.setState({ address: wallet.address })
                 } else {
                 }
             });
@@ -75,26 +85,34 @@ class DeviceManagement extends Component {
         if (!await this.web3ConnectionExists()) return;
         
             try {
-            const location = await getCurrentGPSLocation()
-            console.log(location)
+            const location = await getCurrentGPSLocation();
+            console.log(location);
 
             // Send the transaction to check the device in
             // Push the raw data to ipfs log the data onchain
+
         } catch(err) {
             alert('So sorry but it appears there was an error in retrieving your location.  We recommend using the Google Chrome or Brave browsers and to ensure location data is not blocked.')
         }
     }
 
     async web3ConnectionExists() {
-        if (this.state.web3) {
+        const { web3, listening } = this.state;
+        
+        if (web3) {
             return true
         
         // Doesn't exist, try to create it
         } else {
-            const web3 = await createWeb3Connection();
+            const web3Conn = await createWeb3Connection();
 
-            if (web3) {
-                this.setState({ web3 });
+            if (web3Conn) {
+                this.setState({ web3: web3Conn });
+
+                if (!listening) {
+                    startListeningForEvents(web3Conn, ['ProductRegistry', 'ProductRegistry'], ['DeviceRegistered', 'DeviceCheckedIn']);
+                    this.setState({ listening: true });
+                }
                 return true;
             } else {
                 return false;
