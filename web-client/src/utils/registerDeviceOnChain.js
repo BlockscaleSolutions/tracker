@@ -7,7 +7,7 @@ import axios from 'axios';
  */
 async function registerDeviceOnChain(web3, wallet) {
     const TX_SERVICE_URL = process.env.REACT_APP_TX_SERVICE_URL;
-    const url = `${TX_SERVICE_URL}/delegateCall`;
+    const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
 
     const callData = {
         networkName: 'kovan',
@@ -16,7 +16,11 @@ async function registerDeviceOnChain(web3, wallet) {
         abiMultihash: 'QmaCzFjKWyhMt6eVENksWNGy8vSyU6P95AbA9zoGKXNLgZ'
     }    
 
-    const res = await axios.get(`${TX_SERVICE_URL}/delegateCall/${JSON.stringify(callData)}`);
+    const headers = { 'Authorization': CLIENT_ID };
+
+    const url = `${TX_SERVICE_URL}/delegateCall/${JSON.stringify(callData)}`;
+
+    const res = await axios.get(url, { headers });
 
     console.log(res);
 

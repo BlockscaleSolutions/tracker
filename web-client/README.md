@@ -1,6 +1,6 @@
 # Running the app
 
-CHOKIDAR_USEPOLLING=true REACT_APP_TX_SERVICE_URL=http://localhost:3001 REACT_INFURA_API_KEY=34adecda129b44fbb1ba930b2d9531f9 REACT_APP_MAPS_KEY=AIzaSyBRmWaxaYjgurl8LWCgy571Icas5I0xCNM yarn start
+CHOKIDAR_USEPOLLING=true REACT_APP_TX_SERVICE_URL=http://localhost:3001 REACT_INFURA_API_KEY=34adecda129b44fbb1ba930b2d9531f9 REACT_APP_MAPS_KEY=AIzaSyBRmWaxaYjgurl8LWCgy571Icas5I0xCNM REACT_APP_CLIENT_ID=0x8997389698e8a10e7c4a32fb7fe20588219f88b6 yarn start
 
 
 - If not updating on file change add the polling flag

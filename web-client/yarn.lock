@@ -1856,6 +1856,11 @@ bl@^1.0.0:
     readable-stream "^2.3.5"
     safe-buffer "^5.1.1"
 
+blockchain-tx-service-api.js@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/blockchain-tx-service-api.js/-/blockchain-tx-service-api.js-0.0.2.tgz#e78daac07d2d0063da046a2495cd6b4002a1f79d"
+  integrity sha512-Bgzk/7f7T3KTp7umgHP5rKLtsUR7UocWirU2zXG1ozxWj9QUIUDVSdg+S98qU/K7U3D1Aa940NmpcwpOQUIIXw==
+
 bluebird@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.2.tgz#1be0908e054a751754549c270489c1505d4ab15a"

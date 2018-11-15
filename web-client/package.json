@@ -7,6 +7,7 @@
     "@material-ui/icons": "^3.0.1",
     "axios": "^0.18.0",
     "bip39": "^2.5.0",
+    "blockchain-tx-service-api.js": "^0.0.2",
     "ethereumjs-abi": "^0.6.5",
     "ethereumjs-util": "^6.0.0",
     "ethereumjs-wallet": "^0.6.2",
